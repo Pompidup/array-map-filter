@@ -20,9 +20,14 @@ En sortie: [
 ]
 
  */
-
 function getStringsLength(strings) {
+  const newString = strings.map(function(strings) {
+    return strings + ' contains ' + strings.length + ' characters';
+  });
+  return newString;
 }
+
+
 
 // Si besoin, tu peux toujours visualiser le résultat avec console.log,
 // mais alors, il faut alors lancer l'exercice avec node map/ex1
