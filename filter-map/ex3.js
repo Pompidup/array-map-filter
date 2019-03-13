@@ -51,6 +51,21 @@ Sortie attendue:
 */
 
 function getStudentsPerCurriculum(campuses, curriculumName) {
+  const newTab = campuses.filter(function(campuses, curriculumName) {
+    let lgCurri = campuses.curriculums.length;
+    for(let i = 0; i<lgCurri; i++){
+      let campus = campuses.curriculums[i];
+
+      if ( campus.name === curriculumName){
+      return campuses;
+      }
+    }
+  })
+  .map(function(campuses) {
+    let nbStudent = campuses.curriculums;
+    return campuses.city + ': ' + nbStudent.numStudents;
+  });
+  return newTab;
 }
 
 module.exports = getStudentsPerCurriculum;
