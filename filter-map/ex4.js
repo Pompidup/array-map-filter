@@ -64,7 +64,10 @@ En prenant les deux exemples d'arguments d'entrée, on obtiendrait ceci en sorti
 */
 
 function getActivitiesMembers(activities, persons) {
-}
+  
+
+  }
+
 
 
 
